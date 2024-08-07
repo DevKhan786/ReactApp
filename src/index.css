@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.to-do-list {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 600px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.task-input {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+select {
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: white;
+  text-shadow: 0 0 5px black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-left: 5px;
+}
+
+.add-button {
+  background-color: #4caf50;
+}
+
+.add-button:hover {
+  transform: scale(1.05);
+}
+
+.add-button:active {
+  transform: scale(0.95);
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  transform: scale(1.05);
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+}
+
+.complete-button,
+.edit-button,
+.move-button {
+  background-color: #333;
+}
+
+.complete-button:hover,
+.edit-button:hover,
+.move-button:hover {
+  transform: scale(1.05);
+}
+
+.complete-button:active,
+.edit-button:active,
+.move-button:active {
+  transform: scale(0.95);
+}
+
+.move-button {
+  background-color: #00bcd4;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
